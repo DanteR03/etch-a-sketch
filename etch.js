@@ -13,13 +13,13 @@ brush.addEventListener("mouseover", function( event ) {
   event.target.style.backgroundColor = "black";
 });
 
-const clear = document.querySelector("#clear");
+const eraser = document.querySelector("#clear");
 
-clear.addEventListener("click", function () {
+eraser.addEventListener("click", function () {
   const squares = document.querySelectorAll(".square");
   squares.forEach((square) => {
     square.style.backgroundColor = "white";
   });
 });
 
-window.onload = createGrid();
+window.onload = createGrid();  
