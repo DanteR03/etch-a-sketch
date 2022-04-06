@@ -1,4 +1,22 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  width: 354px;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+}
+
+.container, .square {
+  border: solid 1px #000000;
 }
