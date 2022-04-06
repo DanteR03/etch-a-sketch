@@ -7,4 +7,12 @@ function createGrid() {
   }
 }
 
+const brush = document.querySelector("#sketch");
+
+brush.addEventListener("mouseover", function( event ) {
+  event.target.style.backgroundColor = "black";
+});
+
+const clear = document.querySelector("#clear");
+
 window.onload = createGrid();

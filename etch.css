@@ -3,20 +3,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: darkgray;
+  gap: 15px;
 }
 
 .container {
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  width: 354px;
+  background-color: white;
+  width: 512px;
 }
 
 .square {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
-.container, .square {
+.square {
   border: solid 1px #000000;
 }
