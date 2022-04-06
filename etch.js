@@ -15,4 +15,11 @@ brush.addEventListener("mouseover", function( event ) {
 
 const clear = document.querySelector("#clear");
 
+clear.addEventListener("click", function () {
+  const squares = document.querySelectorAll(".square");
+  squares.forEach((square) => {
+    square.style.backgroundColor = "white";
+  });
+});
+
 window.onload = createGrid();
